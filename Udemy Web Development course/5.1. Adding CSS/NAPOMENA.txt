@@ -1,0 +1,3 @@
+U ovom zadatku razlika je sto je zadatak trazio da promjenim <h1> elemente a ne cijele backroundove stranica.
+Kod je isti samo umjesto <html> i u liniji sa tim elementom, sve cssove sam trebao staviti u <h1> element.
+Sve ostalo je isto, good job.
