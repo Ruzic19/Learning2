@@ -1,0 +1,21 @@
+<--- AKO NE ZNAS KOJI JE SELECTOR ELEMENTA, odi u konzolu od stranice, lijevo od elementa imas 3 tockice i na tome 'Copy Element Selector'
+
+<--- PARENT CHILD SELEKTORI ' .class > element ' moze lancati i unuke kao npr ' .class > element > element ' i tako se moze koliko god hoce.
+    Pomaze koristiti ovaj nacin selektiranja ukoliko nema nikakva klasa ili id, npr ako su samo div elementi.
+
+<--- GRID-AREA  dobar shorthand za tocno specificirati di pocinje i gdje zavrsava item unutar grid containera. primjer:
+
+umjesto da se specificira na ovaj nnacin : 
+.item {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2
+    grid-row-end: 3;
+}
+
+moze se jednostavno napisati :
+
+.item{
+    grid-area: 2 / 1 / 3 / 3 <--- gdje su : grid-area: grid-row-start / grid-column-start / grid-row-end / grid-column-end ; 
+}
+ali ako to primjenim na jedan item, morao bih onda na sve
