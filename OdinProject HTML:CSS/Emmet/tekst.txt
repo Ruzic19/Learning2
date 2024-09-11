@@ -1,0 +1,3 @@
+Here we didn't do much but check the shortcuts of Emmet Abbreviation.
+
+Nothin further needed to explain here, if I need a shortcut look at the following link : --> https://docs.emmet.io/cheat-sheet/
