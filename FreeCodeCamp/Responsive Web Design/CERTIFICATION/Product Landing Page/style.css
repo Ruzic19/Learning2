@@ -1,0 +1,265 @@
+html,body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(229, 227, 227);
+    
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;;
+}
+
+#header-img {
+    height: 150px;
+    width: 200px;
+    margin-right: auto;
+    margin-left: 0;
+    box-sizing: border-box;
+    
+    
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100px;    
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    overflow: hidden;
+    background-color: rgb(229, 227, 227);
+}
+
+body {
+    margin-top: 100px;
+    margin-left: 10px;
+}
+
+header ul {
+    list-style: none;
+}
+
+/*header ul li {
+    display: inline-block;
+    padding:  0px 20px;
+
+}*/
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+ul li {
+    padding: 0 50px; 
+}
+
+header ul li a {
+    text-decoration: none;
+    color: #000;
+}
+li:last-of-type {
+    padding-right: 80px;
+}
+
+li, a {
+    font-size: 20px;
+    
+}
+
+#Features {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+    
+}
+
+h2 {
+    margin-bottom: 30px;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#form > #submit {
+    margin: 15px;
+    height: 30px;
+    width: 150px;
+    background-color: rgb(224, 224, 6);
+    border: none;
+    border-radius: 5px;
+    
+}
+
+#form > #email {
+    width: 300px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+}
+
+#How_it_works {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.naziv-usluga {
+    display: flex;
+    height: 200px;
+    width: 65vw;
+    /*background-color: salmon;*/
+    margin: 5px;
+}
+
+.ikona {
+    box-sizing: border-box;
+    margin: 10px;
+    width: 20%;
+    /*background-color: aqua;*/
+}
+
+.tekst-ikone {
+    box-sizing: border-box;
+    /*background-color: beige;*/
+    width: 100%;
+    margin: 10px;
+    text-align: left;
+}
+
+.svg {
+    width: 100%;
+    height: 100%;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+video {
+    height: 400px;
+    width: 560px;
+}
+
+#Pricing {
+    height: 313px;
+    width: 100%;
+    /*background-color: lightyellow;*/
+    display: flex;
+    justify-content: center;
+}
+
+.prices-table {
+    height: 313px;
+    width: 65vw;
+    /*background-color: blue;*/
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.prices {
+    height: 313px;
+    width: calc(100% / 4);
+    /*background-color: blueviolet;*/
+    background-color: rgb(229, 227, 227);
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid black;
+    
+}
+
+footer {
+    height: 75px;
+    width: 100%;
+    /*background-color: black;*/
+    background-color: rgb(229, 227, 227);
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+.footer-note {
+    background-color: lightgrey;
+    width: 65vw;
+}
+
+.footer-note >ul {
+    display: flex;
+    background-color:lightgray;
+    justify-content: flex-end;
+    list-style: none;
+    
+}
+.footer-note > p {
+    text-align: right;
+    
+}
+.footer-note >ul li {
+    padding: 5px;
+    
+}
+
+.footer-note >ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.naziv-usluga .tekst-ikone .p-teksta {
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+.naziv-usluga .tekst-ikone h2 {
+    margin: 0px;
+    padding-top: 70px;
+}
+
+span {
+    /*background-color: salmon;*/
+    background-color: lightgray;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.prices #submit-sub {
+    margin: 15px;
+    height: 30px;
+    width: 50%;
+    min-width: 40% ;
+    background-color: rgb(224, 224, 6);
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.prices ol {
+    /*background-color: aqua;*/
+    list-style: none;
+    box-sizing: border-box;
+}
+

@@ -1,0 +1,60 @@
+
+*{
+   
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}
+
+#img-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(230, 222, 222);
+    padding: 20px 0px;
+    border-radius: 15px;
+    flex-direction: column;
+}
+
+img {
+    max-width: 100%;
+    border-radius: 15px;
+  }
+
+  
+
+#title {
+    text-align: center;
+    padding: 50px;
+    background-color: rgb(230, 222, 222);
+    border-radius: 15px 15px 0px 0px;
+    font-size: 30px;
+}
+
+#tribute-info {
+    background-color: rgb(230, 222, 222);
+    border-radius: 0px 0px 15px 15px;
+}
+
+ul {
+    display: table;
+    margin: 0 auto;
+    
+}
+
+li {
+    padding: 10px;
+}
+
+
+
+p {
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+}
+
+figcaption {
+    font-size: 15px;
+    font-style: italic;
+    text-decoration: underline;
+}

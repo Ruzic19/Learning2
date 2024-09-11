@@ -1,0 +1,104 @@
+body, html {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+* {
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: salmon;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    
+}
+
+.navbar ul{
+    list-style: none;
+    height: 100%;
+    display: flex;
+    margin-right: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar li {
+    display: inline-block;
+    font-size: 22px;
+    padding: 10px;
+    /*Nije mi jasno kako da napravim da mi LI element zauzme cijelu mogucu visinu elementa UL */
+    
+}
+
+.navbar a {
+    display: block;
+    color: #fff;
+}
+
+
+/************************************************************************/
+
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 100%;
+    z-index: -1;
+
+}
+
+#welcome-section {
+    background-color: aqua;
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    font-weight: 700;
+    font-family: Raleway, sans-serif;
+    font-size: 55.68px;
+    line-height: 77.952px;  
+}
+
+p {
+    font-size: 27.84px;
+    padding-top: 10px;
+    font-weight: 400;
+}
+
+#projects {
+    background-color: aquamarine;
+    width: 100vw;
+    
+    
+}
+
+#profile {
+    background-color: red;
+}
+
+footer {
+    background-color: lightgrey;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
