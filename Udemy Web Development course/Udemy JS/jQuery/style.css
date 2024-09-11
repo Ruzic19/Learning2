@@ -1,0 +1,12 @@
+.big-title {
+    font-size: 10rem;
+    color: purple;
+    font-family: cursive;
+}
+h1 {
+    display: inline-block;
+}
+
+.margin-50 {
+    margin: 50px;
+}
