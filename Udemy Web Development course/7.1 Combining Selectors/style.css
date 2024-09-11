@@ -1,0 +1,21 @@
+/* Write your code here: */
+/*ovo je grupiranje 2 ili vise elemenata */
+h1 , h2 {
+    color: blueviolet;
+}
+/*prvo je parent, drugo je child nacin grupacije*/
+.box > p {
+    color: firebrick;
+}
+/*ovo je djed prvo pa razmak pa je potomak, moze biti djete ili unuk*/
+.box li {
+    color: blue;
+}
+/*ovo je nacin chaining, kako bi mogli bit specificniji, maltene mora bit dio svega sto napisemo u chainu*/
+li.done {
+    color: seagreen;
+}
+
+ul p.done {
+    font-size: 0.5rem;
+}
