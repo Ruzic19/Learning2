@@ -1,0 +1,23 @@
+.custom-button {
+    background-color: #04ddb2;
+    color: white;
+    border-radius: 1em;
+    padding: 5px 20px;
+
+}
+
+.custom-hamburger {
+    border-radius: 1em;
+    border: 1px solid ;
+
+}
+
+h1 > span {
+    color: #04ddb2;
+}
+
+.paragraph {
+    font-weight: 700;
+    font-size: 3.4rem;
+}
+
