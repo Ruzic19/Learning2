@@ -1,0 +1,8 @@
+Koristeci metode rada nad stringovima iz zadanog stringa :
+1. Spremite duljinu stringa u varijablu.
+2. Izdvojite rijec 'sit' u zasebnu varijablu.
+3. Zamjenite rijec 'amet' sa rijeci 'elit'.
+4. Konkatenirajte u novu varijablu zadani string sa stringom 'consectetur adipiscing elit', sa zarezom izmedu.
+5. Konvertirajte sve rijeci u originalnom stringu u velika slova
+6. Maknite pocetnu prazninu u stringu.
+7. Nadite sovo na poziciji 12

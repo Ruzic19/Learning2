@@ -1,0 +1,5 @@
+Pratite kod u script.js
+
+1. Koja je vrijednost varijable trueFalse ? Cemu sluze dvostruki navigacijski znakovi
+
+2., 3. i 4. Koju ce vrijednost ispisati console.log? Zasto?
