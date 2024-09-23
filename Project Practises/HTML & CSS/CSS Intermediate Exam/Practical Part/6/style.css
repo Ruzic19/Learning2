@@ -1,0 +1,38 @@
+/*6. Responsive Design: Write a CSS rule that applies only when the screen width is between 600px and 1200px. Within that range, make all h1 headings have a  font size of 36px, and change the background color of div elements to lightgray.*/
+
+h1 {
+    font-size: 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    border: 1px black solid;
+    justify-content: center;
+    align-items: center;
+}
+
+.container > div {
+    border: 1px solid black;
+    margin-bottom: 20px;
+    padding: 0 20px;
+    background-color: lightcoral;
+}
+
+@media  (min-width: 600px) and (max-width: 1200px) {
+    h1 {
+        font-size: 36px;
+    }
+
+    .container > div {
+        background-color: lightgrey;
+    }
+
+}
+
+
+ /*Overall Assessment:
+Your answer is well-structured and demonstrates a solid understanding of Flexbox and media queries.
+
+Score: 4.5/5
+Great job! With minor tweaks and considerations for accessibility, you would be at an even higher level.*/

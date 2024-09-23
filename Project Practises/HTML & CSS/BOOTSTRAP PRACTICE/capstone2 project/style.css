@@ -1,0 +1,87 @@
+body, html {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    height: 90vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    display: block;
+   
+}
+.hero {
+    height: 100%;
+    width: 100%;
+    background-image: url(./vecteezy_grunge-style-background_113127_82/background.jpg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+h1 {
+    padding-bottom: 5%;
+    font-family: "Playwrite US Modern", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    color: #5B99C2;
+}
+
+p {
+    font-family: "MuseoModerno", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: #5B99C2;
+}
+
+
+
+/*header {
+    background-image: url(./vecteezy_grunge-style-background_113127_82/background.jpg);
+    height: 90vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+h1 {
+    padding-bottom: 5%;
+    font-family: "Playwrite US Modern", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 50px;
+    color: #6482AD;
+}
+
+p {
+    font-family: "MuseoModerno", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    color: #6482AD;
+}
+
+.hero-img {
+    height: 400px;
+    position: relative;
+    bottom: 0;
+    
+}*/
+
+
+

@@ -1,0 +1,19 @@
+/*Transitions and Animations: Create a button that smoothly changes its background color and scale (size) when hovered. The transition should last 0.5 seconds.*/
+
+
+
+button {
+    background-color:#3498db;
+    padding: 15px;
+    border: none;
+    border-radius: 12px;
+    font-size: 17px;
+    transition: background-color 0.5s ease, transfrom 0.5s ease;
+}
+button:hover {
+    background-color: blue;
+    transform: scale(1.2);
+}
+
+/*Score: 4/5
+Great job! With a small fix for the typo and a few additional considerations for accessibility, your answer would be even stronger.*/

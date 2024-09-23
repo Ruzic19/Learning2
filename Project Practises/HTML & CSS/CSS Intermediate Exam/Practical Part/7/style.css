@@ -1,0 +1,17 @@
+/*7. Flexbox Layout: Create a flex container with the following requirements:
+            
+            Center items both vertically and horizontally.
+            Distribute space evenly between items.
+            Ensure the items do not shrink or grow.
+            */
+
+
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/*Score: 4.5/5
+Great job! With a bit more context or explanation, your answer could be even stronger.*/

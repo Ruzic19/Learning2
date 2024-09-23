@@ -1,0 +1,24 @@
+/*  8. CSS Grid Layout: Given the following HTML, create a 3-column grid layout where each column takes up an equal amount of space, but the second row's middle column spans 2 columns. Set a 20px gap between grid items.*/
+html, body {
+    height: 100vh;
+    width: 100vw;
+}
+
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr;
+    gap: 20px;
+    border: 1px solid  black;
+}
+
+.item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
+
+/*Score: 4.5/5
+Great job! With a few adjustments for responsiveness and a bit more context, your answer could be even stronger.*/

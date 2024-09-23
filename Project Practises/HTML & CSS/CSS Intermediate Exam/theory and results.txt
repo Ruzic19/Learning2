@@ -1,0 +1,178 @@
+
+CSS Intermediate Exam
+Section 1: Theory (5 points each)
+-------------------------------------------------------------------
+1. Box Model: Explain the CSS Box Model. Describe the difference between content, padding, border, and margin.
+
+The Css Box model is how everything is displayed on the web. The box model contains properties such as content, padding, border and margin.
+
+Content : as it says, the content itselff being <h1> elements or <p> or <article> etc etc.
+Padding : padding is how much room we want to make between the content and its border of the box model.
+Border : is the property of the border itself. we can change the color, make transitions with it, display it or don't etc.
+Margin : margin is how much room we want to make arount the box model of the content, so if padding makes room between the content
+            and its border, the margin makes room outside the border, around the box elements.
+
+--------------------------------------------------------------------------------------------------------------------------------
+2. Positioning: Explain the difference between the following CSS positioning properties: static, relative, absolute, and fixed.
+
+Static :  is the default positioning of HTML elements on the page and we cant set their top, bottom, left or right properties
+Relative :  is positioning relative to its normal position. We can set the elements properties and move it according to them
+Absolute : is positioning RELATIVE to the NEAREST positioned ancestor, imagine an element inside the div. if we position the element absolute,  
+           and the parent, div, relative, then the element can change its properties according to the parent div, instead of the whole page.
+Fixed : is positioning relative to the HTML viewport, so when we position an element fixed with its top bottom left and right properties, the  
+         element is then fixed to that position and follows as we scroll the page
+--------------------------------------------------------------------------------------------------------------------------------
+3. Display Property: What is the difference between the block, inline, and inline-block display values? Give an example of when to use each.
+
+When an element is displayed as BLOCK, then the element takes up the height needed to fit the content, and the WHOLE width of the viewport.,and
+the next element will be positioned bellow the BLOCK displayed one.
+If we position an element as an INLINE-BLOCK then the element takes up the height AND width needed to fit the content. The next element will
+be positioned NEXT to it if there is enough space on the viewport. you can also set padding and other properties associatet with a BLOCK element.
+An INLINE element just takes up the width and height needed, but we cant adjust its properties like a block element.
+
+examples:
+I would use a block element for lets say a NAVBAR because I want it to take up the whole width of the top part of the page. I would also position it fixed
+with its top = 0 property.
+
+An Inline- block element would be usefull to lets say, to set <li> elements next to each other insted of one under another.
+
+An Inline element would be okay to use for <input> or <p> elements.
+
+--------------------------------------------------------------------------------------------------------------------------------
+4. Specificity: How does CSS specificity work? Provide an example where a more specific selector overrides a less specific one.
+
+We have different selectors to select HTML elements in our CSS sheet, and apply styling to them. We can select an element just by using its element
+ for example: <h1> --- selector : h1 {}
+ or we can use its class : <h1 class='header'> --- selector : .header {}
+ the most specific way is by using its ID because only 1 ID  can be used , unlike classes where we can have multiple elements under one class.
+ example: <ul>
+                <li class='list-element' id='one'><li>
+                <li class='list-element' id='two'><li>     selecting the second <li> : #two {} or: ul > #two {} or: ul> li:nth-of-type(2) {}
+                <li class='list-element' id='three'><li>
+          </ul>
+
+the last 2 examples are pseudo selectors. They are the most specific way actually to get the exact element inside of its parent folders
+For example : 
+                <div class='div'>
+                    <article>
+                            <ul class='list'>
+                                <li class='list-item 1'></li>       selector : .div>article>.1 {}
+                                <li class='list-item 2'></li>
+                                <li class='list-item 3'></li>
+                            </ul>
+                            <ul class='list' id='list2'>            selector : div>article>#list2 {}   
+                                <li class='list-item 1a'></li>      selector : div article>.list>.1a {}
+                                <li class='list-item 2a'></li>
+                                <li class='list-item 3a'></li>
+                            </ul>
+
+                    <article>
+                </div>
+--------------------------------------------------------------------------------------------------------------------------------
+5. Flexbox vs. Grid: Briefly compare Flexbox and CSS Grid. When would you use one over the other?
+
+Flexbox is a good way to organize elements, and center them inside their parent container.
+Flexbox is a one plain organizer, so we can center and organize them vertically or horizontally.
+Its good to use for example a navbar or a side bar. its also a good tool to use for mobile web development, since a lot of people nowadays
+use phones more then pc-s or other machines to acces the internet, and everything is scrollable in a column aka vertically.
+
+Both Grid and Flexbox are super tools for responsive designes, we can also tweek them further with @media queryies so that on specific screen sizes
+our elements get more responsive(they shrink or grow)
+
+Grid is a two plane tool, so we can specify our rows and columns to make a grid displaying our elements in said rows and columns.
+Grid would be a good way to display shopping sites for instance since they have multiple categories with a lot of items.
+
+Grid and flexbox would be used together in practice as in we make a grid layout for our items, and then we display our items with a flex container so that
+we can center them inside their grid position.
+
+--------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------
+
+
+RESULT FOR 1.ST PART AND FEEDBACK :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Here’s how I would score your answers on a scale of 1 to 5 based on accuracy, clarity, and completeness:
+
+1. Question 1: CSS Box Model
+Score: 4/5
+Feedback: You provided a solid explanation of the CSS box model, including content, padding, border, and margin. However, your explanation could be a bit more refined, especially in detailing how padding and margin affect layout (e.g., margin collapsing could have been mentioned). Overall, it's a strong answer.
+2. Question 2: Positioning
+Score: 4/5
+Feedback: Your explanation of static, relative, absolute, and fixed positioning was good and accurate, but there could be a clearer explanation of how relative and absolute positioning interact with the layout flow. For example, you mentioned "relative to the nearest ancestor" for absolute positioning, which is correct, but it could be clearer that the ancestor must also be positioned (relative, absolute, or fixed).
+3. Question 3: Display Property
+Score: 4/5
+Feedback: You explained block, inline-block, and inline well. However, your explanation could be more precise in distinguishing between how block and inline elements behave in terms of width and layout. Your examples are helpful but could be a bit more specific.
+4. Question 4: CSS Selectors
+Score: 3.5/5
+Feedback: You correctly explained element, class, and ID selectors, but your examples had some syntax issues (e.g., invalid class names and confusion between descendant and pseudo-class selectors). It would benefit from more clarity on how pseudo-classes differ from descendant selectors.
+5. Question 5: Flexbox and Grid
+Score: 4.5/5
+Feedback: You provided a good comparison between Flexbox and Grid and explained how both can be used in responsive design. Your discussion of combining them with media queries was a strong point. However, it could be more polished by further elaborating on Flexbox being one-dimensional and Grid being two-dimensional.
+
+
+OVERALL SCORE: 4/5
+You’ve demonstrated a strong understanding of intermediate CSS concepts. Your answers are well-structured and mostly accurate, though they could be refined for clarity and precision. Keep up the good work, and with a little more focus on accuracy and examples, you'd be at the top level!
+
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
+Section 2: Practical Questions (10 points each)
+-------------------------------------------------------------------
+6. Responsive Design: Write a CSS rule that applies only when the screen width is between 600px and 1200px. Within that range, make all h1 headings have a     font size of 36px, and change the background color of div elements to lightgray.
+
+
+7. Flexbox Layout: Create a flex container with the following requirements:
+
+Center items both vertically and horizontally.
+Distribute space evenly between items.
+Ensure the items do not shrink or grow.
+HTML structure:
+
+html:
+
+<div class="container">
+  <div class="item">Item 1</div>
+  <div class="item">Item 2</div>
+  <div class="item">Item 3</div>
+</div>
+
+8. CSS Grid Layout: Given the following HTML, create a 3-column grid layout where each column takes up an equal amount of space, but the second row's middle column spans 2 columns. Set a 20px gap between grid items.
+
+HTML structure:
+
+html
+Copy code
+<div class="grid">
+  <div class="item">1</div>
+  <div class="item">2</div>
+  <div class="item">3</div>
+  <div class="item">4</div>
+  <div class="item">5</div>
+  <div class="item">6</div>
+</div>
+
+9. Transitions and Animations: Create a button that smoothly changes its background color and scale (size) when hovered. The transition should last 0.5 seconds.
+
+HTML structure:
+
+<button class="animate-btn">Hover me</button>
+
+
+
+
+
+FINAL RESULTS :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Overall Score: 4/5
+Breakdown:
+Question 1: 4/5
+Question 2: 4/5
+Question 3: 4/5
+Question 4: 3.5/5
+Question 5: 4.5/5
+Question 6: 4.5/5
+Question 7: 4.5/5
+Question 8: 4.5/5
+Question 9: 4/5
+Summary:
+You demonstrated a solid understanding of intermediate CSS concepts with well-structured answers. Most responses were clear and correctly applied, with only minor improvements suggested. Overall, great work!
